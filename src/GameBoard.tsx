@@ -4,16 +4,47 @@ import Keyboard from "./Keyboard";
 const GameBoard = () => {
   return (
     <div className={styles.GameContainer}>
-      GameContainer
       <div className={styles.BoardContainer}>
-        BoardContainer
         <div className={styles.GameBoard}>
-          <div className={styles.BoardRow}></div>
-          <div className={styles.BoardRow}></div>
-          <div className={styles.BoardRow}></div>
-          <div className={styles.BoardRow}></div>
-          <div className={styles.BoardRow}></div>
-          <div className={styles.BoardRow}></div>
+          <div className={styles.BoardRow}>
+            <div className={styles.BoardColumn}>M</div>
+            <div className={styles.BoardColumn}></div>
+            <div className={styles.BoardColumn}></div>
+            <div className={styles.BoardColumn}></div>
+            <div className={styles.BoardColumn}></div>
+          </div>
+
+          <div className={styles.BoardRow}>
+            <div className={styles.BoardColumn}></div>
+            <div className={styles.BoardColumn}></div>
+            <div className={styles.BoardColumn}></div>
+            <div className={styles.BoardColumn}></div>
+            <div className={styles.BoardColumn}></div>
+          </div>
+
+          <div className={styles.BoardRow}>
+            <div className={styles.BoardColumn}></div>
+            <div className={styles.BoardColumn}></div>
+            <div className={styles.BoardColumn}></div>
+            <div className={styles.BoardColumn}></div>
+            <div className={styles.BoardColumn}></div>
+          </div>
+
+          <div className={styles.BoardRow}>
+            <div className={styles.BoardColumn}></div>
+            <div className={styles.BoardColumn}></div>
+            <div className={styles.BoardColumn}></div>
+            <div className={styles.BoardColumn}></div>
+            <div className={styles.BoardColumn}></div>
+          </div>
+
+          <div className={styles.BoardRow}>
+            <div className={styles.BoardColumn}></div>
+            <div className={styles.BoardColumn}></div>
+            <div className={styles.BoardColumn}></div>
+            <div className={styles.BoardColumn}></div>
+            <div className={styles.BoardColumn}></div>
+          </div>
         </div>
       </div>
       <Keyboard />

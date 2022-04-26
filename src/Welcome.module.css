@@ -1,10 +1,8 @@
 .Main {
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
@@ -16,17 +14,49 @@
   align-items: center;
   height: 50px;
   width: 100%;
-
-  border-bottom: 2px solid #3a3a3c;
-  border-top: 2px solid #3a3a3c;
-
   font-weight: 700;
   font-size: 3.6rem;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
+
+.HeaderRow {
+  display: flex;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.HeaderColumn {
+  border: 2px solid black;
+  color: aliceblue;
+  border-radius: 3px;
+  margin: 2px;
+  font-size: 2.4rem;
+  font-weight: 500;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #282c34;
+  animation: myanimate;
+  animation-delay: 1s;
+  animation-duration: 5s;
+}
+
+@keyframes myanimate {
+  50% {
+    background-color: yellow;
+  }
+
+  100% {
+    background-color: green;
+  }
+}
+
 .Me {
-  background-color: yellow;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -66,7 +96,7 @@
 
 .Text {
   font-family: "Allerta Stencil";
-  font-size: 22px;
+  font-size: 30px;
   position: absolute;
   top: 50%;
   left: 50%;

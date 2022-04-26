@@ -51,8 +51,11 @@
 .ButtonHalf {
   flex: 0.5;
 }
-.Buttonone {
+.ButtonOne {
   flex: 1;
+}
+.ButtonZero {
+  flex: 0;
 }
 .ButtonBackspace {
   font-family: inherit;
@@ -97,6 +100,35 @@
   flex: 2;
 }
 
+.Placed {
+  background-color: #6aaa64;
+  color: white;
+}
+
+.Present {
+  background-color: rgb(255, 255, 154);
+  color: white;
+}
+
+.Absent {
+  background-color: rgb(192, 192, 192);
+  color: white;
+}
+.guessSquare {
+  border: 2px solid rgb(7, 250, 40);
+  grid-template-columns: repeat(5, 1fr);
+  color: aliceblue;
+  border-radius: 3px;
+  margin: 2px;
+  font-size: 2.4rem;
+  font-weight: 500;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
 button[data-state="correct"] {
   background-color: #6aaa64;
   color: white;
@@ -108,4 +140,148 @@ button[data-state="present"] {
 button[data-state="absent"] {
   background-color: rgb(192, 192, 192);
   color: white;
+}
+
+.GameContainer {
+  width: 100%;
+  max-width: var(--game-max-width);
+  margin: 0 auto;
+  height: calc(100%=var (--header-height));
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+}
+
+.BoardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  overflow: hidden;
+  background-color: blue;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.GameBoard {
+  display: grid;
+  grid-template-rows: repeat(12, 1fr);
+  grid-gap: 5px;
+  height: 420px;
+  width: 350px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.TileRow {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  animation-delay: 2.1s, 480ms;
+  color: aliceblue;
+  border: 2px solid rgb(7, 250, 40);
+  border-radius: 3px;
+}
+
+.TileRow2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  animation-delay: 2.1s, 480ms;
+  color: aliceblue;
+  border: 2px solid rgb(250, 7, 7);
+  border-radius: 3px;
+}
+
+.Tile {
+  background-color: aqua;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #b9272e;
+  line-height: 3.2rem;
+  text-transform: uppercase;
+  color: aliceblue;
+  border-radius: 5px;
+  margin: 2px;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.Tile2 {
+  background-color: blueviolet;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #b9272e;
+  line-height: 3.2rem;
+  text-transform: uppercase;
+  color: aliceblue;
+  border-radius: 5px;
+  margin: 2px;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.Tile.grey {
+  background-color: rgb(192, 192, 192);
+  border: 2px solid black;
+}
+
+.Tile.green {
+  background-color: #6aaa64;
+  border: 2px solid black;
+}
+
+.Tile.yellow {
+  background-color: rgb(255, 255, 154);
+  border: 2px solid black;
+}
+
+.TileTest {
+  background-color: blueviolet;
+  border: 2px solid black;
+}
+
+.GameComplete {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+.Win {
+  background-color: green;
+}
+.GameCompleteLost {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  background-color: #b9272e;
+}
+
+.Overlay {
+  font-size: 22px;
+  opacity: 50%;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #282c34;
+  z-index: 2;
+  cursor: pointer;
 }

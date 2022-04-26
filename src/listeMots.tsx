@@ -1,4 +1,4 @@
-const listeMots = [
+const listeMots: string[] = [
   "tiare",
   "raide",
   "snobe",
@@ -24,6 +24,7 @@ const listeMots = [
   "chott",
   "volai",
   "pinne",
+  "pouet",
 ];
 
 export default listeMots;

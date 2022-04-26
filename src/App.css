@@ -14,7 +14,7 @@
 }
 
 Header {
-  background-color: #282c34;
+  background-color: #ffffff;
 
   color: white;
   display: flex;
@@ -22,7 +22,6 @@ Header {
   align-items: center;
   height: 50px;
   width: 100%;
-
   border-bottom: 2px solid #3a3a3c;
   border-top: 2px solid #3a3a3c;
 
